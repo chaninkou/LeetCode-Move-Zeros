@@ -1,4 +1,4 @@
-package zeroEnd;
+package leetcode283;
 
 import java.util.Arrays;
 
@@ -7,12 +7,11 @@ public class MoveZeroesToEndFunction {
     	// We want to put everything on the left first
         int index = 0;
         
-        // Insert the non zero number first
+        // Insert the non zero number by checking and increase index position
         for(int i = 0; i < nums.length; i++){
             if(nums[i] != 0){
                 nums[index] = nums[i];
                 
-                // Increase to next element index
                 index++;
             }
         }
@@ -22,7 +21,5 @@ public class MoveZeroesToEndFunction {
             nums[index] = 0;
             index++;
         }
-        
-        System.out.println("Solution: " + Arrays.toString(nums));
     }
 }

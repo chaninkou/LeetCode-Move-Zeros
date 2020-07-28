@@ -1,4 +1,4 @@
-package zeroEnd;
+package leetcode283;
 
 import java.util.Arrays;
 
@@ -11,5 +11,7 @@ public class Main {
 		MoveZeroesToEndFunction solution = new MoveZeroesToEndFunction();
 		
 		solution.moveZeroes(nums);
+		
+		System.out.println("Solution: " + Arrays.toString(nums));
 	}
 }
