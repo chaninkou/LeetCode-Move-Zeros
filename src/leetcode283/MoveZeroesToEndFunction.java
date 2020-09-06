@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class MoveZeroesToEndFunction {
     public void moveZeroes(int[] nums) {
-    	// We want to put everything on the left first
+    	// Replace from first index and so on
         int index = 0;
         
         // Insert the non zero number by checking and increase index position
